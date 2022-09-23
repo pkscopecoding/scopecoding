@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional operator in C </title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="">Scope</a>
+            <a id="coding" href="">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="www.scopecoding.com">Home</a></li>
+            <li><a href="https://www.scopecoding.com/#learn">Learn</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div " style="height: 1352px; ">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white; padding-left:20px;">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html">constants, Variables and Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="C Program in detail.html">Comment in C</a></li>
+                <li><a href="C Program in detail.html">Main() function in C</a></li>
+                <li><a href="C Program in detail.html"> Uses of Variables in C</a></li>
+                <li><a href="C Program in detail.html">Printf() in C</a></li>
+                <li><a href="C Program in detail.html">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html">Integer and Float Conversion</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html">Increment and Decrement Operator in C</a></li>
+                <li><a href="relational operator in c.html">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html" class="active">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li>
+            </ul>
+        </div>
+
+        <div class="content-main">
+
+            <h1>Conditional Operator</h1>
+            <p>Conditional operator is a ternary operator ( ? and : ) which requires three expressions as operands . It
+                is
+                written as- <br>
+                <b>TestExpression ? expression1 : expression2</b><br>
+                Firstly the TestExpression is evaluated.
+            <p><b><i>it will be more clear from the following image:</i></b></p>
+            <img class="image" src="/images/conditionaloperator.jpg" alt="">
+
+            <p>(i). If TestExpression(condition) is true (nonzero), then expression1 is
+                evaluated
+            </p>
+            <p>(ii). If TestExpression(condition) is false (zero), then expression2 is evaluated .</p>
+            <br>
+            <p>For example consider this conditional expression- </p>
+            <p><b>
+                    a>b?a:b
+                </b></p>
+            <p>Here first the expression <b>a > b </b>is evaluated, if the value is true then the value of variable
+                <b>a</b>
+                becomes the value of conditional expression otherwise the value of b becomes the value of conditional
+                expression.
+            </p>
+            <br>
+            <p>Suppose <b>a= 5 and b = 8,</b> and we use the above conditional expression in a statement as -</p>
+            <p><b>max = a>b?a:b;</b></p>
+            <br>
+            <p>First the expression <b>a>b</b> is evaluated, it is false so the value of <b>b</b> becomes the value of
+                conditional expression and it is assigned to variable <b>max.</b></p>
+            <p> <b><i><b>a&lt;b ? printf(" a is smaller ") : printf( "b is smaller" );</b></i></b>
+            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a href="logical operators in c.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="sizeof.html">&gt;&gt;</a></button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer part -->
+
+
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+</body>
+
+</html>

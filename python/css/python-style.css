@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+}
+
+nav {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 0px 12px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > a {
+    text-decoration: none;
+    font-size: 35px;
+}
+
+#scope {
+    color: white;
+}
+
+#coding {
+    color: blue;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links > li {
+    list-style-type: none;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.nav-links > li > a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.active {
+    background-color: blue;
+}
+
+.nav-links > li > .active:hover {
+    background-color: blue;
+    color: white;
+}
+
+.python-section {
+    width: 100%;
+    margin-top: 25px;
+    padding: 25px; /* top = 50px */
+    padding-left: 0;
+    /* padding-right: 0 */ /* when ad-div is present */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content-toggle {
+    display: none;
+}
+
+.index-div {
+    width: 250px;
+    background-color: #333;
+    margin-right: 25px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.index-div > h1 {
+    color: blue;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-links {
+    margin-bottom: 10px;
+}
+
+.content-links > li {
+    list-style-type: none;
+}
+
+.content-links > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: flex;
+    border-right: 1px solid #333;
+}
+
+.content-active {
+    background-color: blue;
+}
+
+.content-links > li > a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.content-links > li > .content-active:hover {
+    background-color: blue;
+    color: white;
+}
+
+.content-div {
+    width: 100%; /* width change to 70% when ad-div is present */
+    border: 1px solid #333;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.primary-heading {
+    text-align: center;
+}
+
+.secondary-heading {
+    margin-top: 25px;
+}
+
+.point-list {
+    margin-left: 25px;
+}
+
+.para {
+    margin-top: 25px;
+}
+
+.content-img {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img > img {
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+.div-ad {
+    border: 1px solid #333;
+    width: 15%; /* don't change this value */
+    margin-left: 25px;
+    display: none;
+    justify-content: center;
+}
+
+footer {
+    background-color: #333;
+    width: 100%;
+    padding: 25px;
+}
+
+.copyright-div > p {
+    color: white;
+}
+
+.copyright-div > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.coding {
+    color: blue;
+}
+
+.copyright-div > a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright-div > a:hover {
+    color: blue;
+}
+
+.tos {
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .index-div {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+    }
+
+    .index-div {
+        height: 400px;
+        overflow-y: scroll;
+    }
+
+    .content-toggle {
+        display: flex;
+        color: #333;
+        position: absolute;
+        top: 205px;
+    }
+
+    .content-icon {
+        font-size: 25px;
+    }
+
+    .python-section {
+        padding-left: 25px;
+        margin-top: 50px;
+    }
+
+    .content-img > img {
+        width: 100%;
+    }
+
+    .index-div.index-active {
+        display: flex;
+    }
+
+    .content-icon.content-rotate {
+        transform: rotate(180deg);
+        transition: all 0.2s;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        height: 300px;
+        background-color: #333;
+        top: 80px;
+        justify-content: center;
+    }
+
+    .nav-links > li > a {
+        border-radius: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .toggle-btn {
+        display: flex;
+        position: absolute;
+        right: 25px;
+        top: 36px;
+    }
+
+    .nav-links.active-toggle {
+        display: flex;
+    }
+
+    .nav-icon.nav-toggle {
+        transform: rotate(180deg);
+        transition: all 0.2s;
+    }
+
+    .content-toggle {
+        top: 120px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo > a {
+        font-size: 30px;
+    }
+}

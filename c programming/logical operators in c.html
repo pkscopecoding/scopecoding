@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical and boolean operators in C </title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="">Scope</a>
+            <a id="coding" href="">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="www.scopecoding.com">Home</a></li>
+            <li><a href="https://www.scopecoding.com/#learn">Learn</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div " style="height: 100% ">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white; padding-left:20px;">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html">constants, Variables and Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="C Program in detail.html">Comment in C</a></li>
+                <li><a href="C Program in detail.html">Main() function in C</a></li>
+                <li><a href="C Program in detail.html"> Uses of Variables in C</a></li>
+                <li><a href="C Program in detail.html">Printf() in C</a></li>
+                <li><a href="C Program in detail.html">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html ">Integer and Float Conversion</a>
+                </li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html">Increment and Decrement
+                        Operator in C</a></li>
+                <li><a href="relational operator in c.html">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html" class="active">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li>
+            </ul>
+        </div>
+
+        <div class="content-main">
+
+            <h1 id="ar-h1" class="outerheading">logical or Boolean Operators </h1>
+            <p>An expression that combines two or more expressions is termed as a logical Expression. For combining
+                these
+                expressions we use logical operators. These operators return 0 for false and 1 for true. The operands
+                may be
+                constants , variables, or expressions. C has three logical Operators </p>
+
+            <!-- table      -->
+            <style>
+                table,
+                td,
+                th {
+                    border: 1px solid black;
+                    padding: 4px;
+                }
+
+                td {
+                    text-align: center;
+                }
+
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+            </style>
+
+            <table style="width: 100%;">
+
+
+                <tr>
+                    <th>Operator </th>
+
+                    <th>Name </th>
+
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>AND</td>
+                </tr>
+                <TR>
+                    <TD>||</TD>
+                    <TD>OR</TD>
+                </TR>
+                <tr>
+                    <td>!</td>
+                    <td>NOT</td>
+                </tr>
+            </table>
+            <P>Here logical NOT is a unary operator while the other two are binary operators. Let us understand the
+                concept
+                of true or false. In C any non- zero value is regarded as true and zero is regarded as false. </P>
+
+
+            <h2 class="innerheadings">AND (&&) Operator</h2>
+            <p>This operator gives the net result true if both the condition are false, otherwise the result is false.
+            </p>
+            <p><b>Boolean Table: </b></p>
+
+            <!-- table      -->
+
+
+            <table style="width: 100%">
+                <tr>
+                    <th>Condition 1</th>
+
+                    <th>Condition 2 </th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>False</td>
+                    <td>False</td>
+                    <td>False</td>
+                </tr>
+                <tr>
+                    <td>False </td>
+                    <td>True</td>
+                    <td>False</td>
+                </tr>
+                <tr>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>False</td>
+                </tr>
+                <tr>
+                    <td>True</td>
+                    <td>True</td>
+                    <td>True</td>
+                </tr>
+            </table>
+            <p>Let us take three variables a=10, b=5, c=0 <br>
+                Consider the logical expression _ <br>
+                <b>(a >= b) && (b > 15) </b> <br>
+                This gives result false because only one condition is true.
+            </p>
+            <p><b>Example:</b>
+                AND operation: Consider a proposition or logical statement </p>
+            <p><b> “Student having books
+                    AND his identity card can enter the college”. </b>
+            </p>
+            <p>
+                Outcome or the result of this statement is the entry of the student – True or False
+                (Allowed or not allowed).
+            <p> Student should have two essential things:</p>
+            <p>(i) Books – True or False (Student has the books or not).</p>
+            <p>(ii) I. Card – True or False (Student has the I. Card or not).</p>
+
+            Table illustrates that only the student who has books AND has his identity
+            card, can enter the college. <br> So the given proposition consists of two simple propositions
+            (student having books and having his Identity card)
+            This is known as AND operation.
+            </p>
+            <h2 class="innerheadings">OR ( &emsp;||&emsp; ) Operator </h2>
+            <p>This operator gives the net result false, if both the conditions have the value false, otherwise the
+                result
+                is true.</p>
+            <p><b>Boolean Table :</b></p>
+
+
+            <table style="width: 100%">
+                <tr>
+                    <th>Condition 1</th>
+
+                    <th>Condition 2 </th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>False</td>
+                    <td>False</td>
+                    <td>False</td>
+                </tr>
+                <tr>
+                    <td>False </td>
+                    <td>True</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>True</td>
+                    <td>True</td>
+                    <td>True</td>
+                </tr>
+
+            </table>
+            <p>Let us take three variables a=10, b=5, c=0 <br>
+                Consider the logical expression _ <br>
+                <b>(a >= b) || (b > 15) </b> <br>
+                This gives result true because one condition is true.
+            </p>
+            <span class="hlines">
+                <p><b>
+                        Let illustrate this with example :</b></p>
+                <p><b>now see the table above and suppose condition1 is books, condition2 is id card, and result is
+                        Entry
+                        (true or false). </b></p>
+                <p>
+                    OR operation: Consider another proposition “Student having books OR his identity
+                    card can enter the college”. <br>
+                    Outcome or the result of this statement too is the same; entry of the student – True
+                    or False (Allowed or not allowed).
+                <p> Student should have either of the two essential things:</p>
+                <p>(i) Books – True or False (Student has the books or not).</p>
+                <p> (ii) I. Card – True or False (Student has the I. Card or not).</p>
+                </p>
+            </span>
+            <p><b>NOTE: student can enter the college with his id card or with books or with both books and id card.
+                </b>
+                without any one of the books and id card he will not be able to enter the college.
+            </p>
+
+
+            <h2 class="innerheadings">NOT ( ! ) Operator</h2>
+            <p>This is a unary operator and it negates the value of the condition . If the value of the condition is
+                false
+                then it gives the result true. if the value of the condition is true then it gives the result false.</p>
+
+            <p><b>Let us understand This with an example :</b></p>
+            <p>
+                NOT operation: Consider the logic statement “The student who does not have the cell
+                phone, is allowed to enter the college”. <br>
+                The student’s entry is the outcome or the result of this statement – True or False
+                (Allowed or not allowed). <br>
+                Student should not have the cell phone, the only criterion at the check point. The
+                student has the cell Phone or not (True or False).
+            </p>
+            <p><b>suppose condition is cell phone, and result is entry. if true then entry will be false and vice
+                    versa.</b></p>
+            <p><b>Boolean Table: </b></p>
+
+
+            <table style="width: 100%">
+                <tr>
+                    <th>Condition </th>
+
+
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>False</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>True</td>
+                    <td>False</td>
+                </tr>
+
+            </table>
+            <p>Let us take three variables : <b>a= 10, b= 5, c= 0</b> <br>
+                Suppose we have this logical expression- <br>
+                !(a==10)
+            </p>
+            <p>The value of condition <b>(a== 10)</b>is true. NOT operator negates the value of the condition, thus the
+                result is false. </p>
+            <b>!a = !true = false = 0</b>
+            <b>!c = !false = true = 1</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a href="relational operator in c.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="conditional operators in c.html">&gt;&gt;</a></button>
+            </div>
+    </section>
+
+
+
+
+    <!-- Footer part -->
+
+
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Decrement Operator in C </title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="">Scope</a>
+            <a id="coding" href="">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="www.scopecoding.com">Home</a></li>
+            <li><a href="https://www.scopecoding.com/#learn">Learn</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div " style="height: 100%; ">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white; padding-left:20px;">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html">constants, Variables and Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="C Program in detail.html">Comment in C</a></li>
+                <li><a href="C Program in detail.html">Main() function in C</a></li>
+                <li><a href="C Program in detail.html"> Uses of Variables in C</a></li>
+                <li><a href="C Program in detail.html">Printf() in C</a></li>
+                <li><a href="C Program in detail.html">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html">Integer and Float Conversion</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html" class="active">Increment and Decrement
+                        Operator in C</a></li>
+                <li><a href="relational operator in c.html">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li>
+            </ul>
+        </div>
+
+        <div class="content-main">
+
+            <h1>Increment and Decrement operators</h1>
+            <p>The increment (++) and Decrement ( -- ) operators are unary operators because they operate on a single
+                <a href="https://en.wikipedia.org/wiki/Operand"> operand.</a> The increment operator increments the
+                value of
+                the variable by 1, while decrement operator decrements the value of the variable by 1.
+            </p>
+            <div class="example">
+                <ul style="list-style: none;">
+                    <li><b>++x</b> &emsp; is equivalent to &emsp; <b> x= x+1</b></li>
+                    <li><b>--x </b>&emsp; is equivalent to &emsp; <b> x=x-1</b></li>
+                </ul>
+            </div>
+            <p>These operators should be used only with variables; they can't be used with constants or expressions. For
+
+                example the Expressions <b> ++5</b> or <b> ++(x+y+z) </b> are invalid.</p>
+            <br>
+            <h3>These operators are of two types: </h3>
+            <br>
+
+            <p>1. Prefix increment/decrement- operator is written before the operand <b>(eg. ++x or --x)</b></p>
+            <br>
+
+            <p>2. Postfix increment/decrement - Operator is written after the operand <b>eg.(x++ or x--)</b></p>
+            <br>
+            <h2 class="innerheadings">1. Prefix Increment/Decrement</h2>
+            <p>Here first value of variable is incremented / decremented then the new value is used in the operation.
+                Let us
+                take a variable x whose value is 3.</p>
+            <P> The statement is equivalent to these two statements.</P>
+            <p><b>x = x + 1;</b></p>
+            <p><b>y = x;</b></p>
+            <p>Now value of x is 4 and value of y is also 4. </p>
+            <p>The statement <b>y = --x; </b>means first decrement the value of <b>x</b> by 1 then assign the value of x
+                to
+                y.</p>
+            <p>This statement is equivalent to these two statements.</p>
+            <p><b>x = x - 1;</b></p>
+            <p><b>y = x;</b></p>
+            <p>Now value to x is 3 and value of y is also 3. </p>
+
+            <iframe src="https://www.jdoodle.com/iembed/v0/v1F?stdin=0&args=0&rw=1" height="500px" width="100%">
+            </iframe>
+            <p> <b>output:</b> x= 8 x= 9 x= 9 x= 8 x= 8 </p>
+            <p><b>Read:</b> In the second <i><b>printf( )</b></i>, first the value of x is incremented and then printed;
+                similarly in the fourth <b><i>printf( ),</i></b> first the value of x is decremented and then printed.
+            </p>
+
+            <h2 class="innerheadings">2. Postfix Increment/ Decrement</h2>
+            <p>Here first the value of variable is used in the operation and then increment / decrement is performed.
+                Let us
+                take a variable x whose value is 3. </p>
+            <p>The statement <b>y= x++;</b> means first the value of x is assigned to y and then x is incremented . This
+                statement is equivalent to these two statements- </p>
+            <p><b>y = x;</b></p>
+            <p><b>x= x + 1;</b></p>
+            <p>Now value of x is 4 and value of y is 3.</p>
+            <p>The statement <b>y = x --; </b> means first the value of x is assigned to y and then x is decremented.
+            </p>
+            <p>This statement is equivalent to these two statements. </p>
+            <p><b>y = x;</b></p>
+            <p><b>x = x-1;</b></p>
+            <p>Now value of x is 3 and value of y is 4.</p>
+            <P><b>Program:</b></P>
+
+            <iframe src="https://www.jdoodle.com/iembed/v0/v1H?stdin=0&args=0&rw=1" height="500px" width="100%">
+            </iframe>
+            <p><b>execute the above program and see the output.</b></p>
+            <p style="margin-top: 50px;"><b>Read : </b> In the second <b><i>printf()</i></b> statement, first the value
+                of x
+                is printed and then
+                incremented; similarly in the fourth <b><i>printf()</i></b> statement first the value of x is printed
+                and
+                then decremented.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a href="assignment operators in c.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="relational operator in c.html">&gt;&gt;</a></button>
+            </div>
+    </section>
+
+
+
+
+    <!-- Footer part -->
+
+
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+.content-main {
+    font-style: normal;
+    font-family: 'Kanit', sans-serif;
+
+    line-height: 25px;
+    font-size: 18px;
+}
+
+* {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+
+h1 {
+    margin: 50px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.innerheadings {
+    margin: 60px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.example {
+    background-color: yellow;
+    border-left: 8px solid rgba(48, 48, 253, 0.895);
+}
+
+.example ul li {
+    list-style: none;
+
+}
+
+
+.point-wise {
+    margin-left: 10px;
+}
+
+.point-wise li {
+    list-style-type: lower-alpha;
+}
+
+.hlines {
+    background-color: bisque;
+    color: blue;
+}
+
+.tbl1 {
+    border: .5px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tbl1 td,
+.tbl1 th {
+    border: .5px solid black;
+    align-items: center;
+    text-align: center;
+}
+
+.tbl1 th {
+    font-weight: bold;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* BUTTON  NEXT/PREV*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.button>button {
+    padding: 10px 15px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+}
+
+.button>button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px 16px;
+
+}
+
+.colortbl {
+    background-color: aquamarine;
+}
+
+
+.scroll-con {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 300px;
+
+
+}
+
+.scroll-con div ul {
+    width: 200px;
+    padding-left: 20px;
+}
+
+
+.scroll-con div ul li {
+    list-style: none;
+}
+
+.image {
+    width: 70%
+}
+
+.pb {
+    border: 0.02px solid rgb(188, 186, 186);
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 16px;
+}

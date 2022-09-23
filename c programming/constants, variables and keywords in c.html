@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constants, variables and Keywords in C</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="">Scope</a>
+            <a id="coding" href="">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="www.scopecoding.com">Home</a></li>
+            <li><a href="https://www.scopecoding.com/#learn">Learn</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div " style="height: 100%;">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html " class="active">constants, Variables and
+                        Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="">Comment in C</a></li>
+                <li><a href="">Main() function in C</a></li>
+                <li><a href=""> Uses of Variables in C</a></li>
+                <li><a href="">Printf() in C</a></li>
+                <li><a href="">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html">Integer and Float Conversion</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html">Increment and Decrement Operator in C</a></li>
+                <li><a href="relational operator in c.html">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li>
+            </ul>
+        </div>
+
+
+        <div class="content-main">
+            <h1>Constants, variables and keywords in C</h1>
+
+
+
+            <p> The alphabets, digits and special symbols when properly combined form constants, variables and keywords.
+                A constant is an entity that doesn&rsquo;t change, whereas, a variable is an entity that may change. A
+                keyword is a word that carries special meaning.
+            </p>
+
+
+
+
+
+            <h3 class="innerheadings">Types of Constants in C</h3>
+            <div class="in-image">
+                <img class="image" src="../images/constant.jpg " alt="error loading image">
+            </div>
+
+            <p> at this stage we will only proceed with primary constants.</p>
+
+            <!-- RULES FOR INTEGER CONSTANT -->
+            <h3 class="innerheadings">Rules For Constructing Integer Constants</h3>
+            <ul class="point-wise">
+                <li>An integer constant must have at least one digit.</li>
+                <li>It must not have a decimal point</li>
+                <li>It can be any of zero, positive or negative.</li>
+                <li>If no sign precedes an integer constant, it is assumed to be positive.</li>
+                <li>No commas or blanks are allowed within an integer constant</li>
+                <li>The allowable range for integer constant is -2147483648 to +2147483647</li>
+            </ul>
+            <div class="example">
+                Ex:-
+                <ul>
+                    <li>1</li>
+                    <li>+2354</li>
+                    <li>0 +84 -98</li>
+                    <li>546</li>
+                    <li>5,634.54 is wrong</li>
+
+                </ul>
+            </div>
+            <p>
+                Truly, the range of an Integer constant depends upon the compiler.
+                For compilers like Turbo C or Turbo C++, the range is -32768 to 32767.
+            </p>
+
+            <!-- .. -->
+            <!-- RULES FOR CONSTRUCTING REAL CONSTANTS -->
+
+
+            <h3 class="innerheadings">Rules For Constructing Real Constants</h3>
+            <span class="hlines"> Real constants are often called Floating Point constants.</span>
+            Real constants could be written in two forms -- Fractional form and Exponential form.
+            <p> Following are the rules for fractional form:-</p>
+            <ul class="point-wise">
+                <li>
+                    A real constant must have at least one digit.
+                </li>
+                <li>It must have a decimal point.</li>
+                <li>It could be either positive or negative.</li>
+                <li>Default sign is positive.</li>
+                <li>No commas or blanks are allowed within a real constant.</li>
+            </ul>
+            <div class="example">
+                <ul>
+                    Ex:=
+                    <li>+345.22</li>
+                    <li>320.00</li>
+                    <li>-644.94</li>
+                    <li>-49.3334</li>
+                </ul>
+            </div>
+            <p>In Exponential form, the real constant is represented in two parts (2.95e-4). <span class="hlines">
+                    The part appearing before 'e' is called mantissa, whereas the part
+                    after 'e' is called exponent.
+                </span></p>
+            <div class="example">
+                Ex:- 0.0000295 can be written in exponential form as 2.95e-4 (i.e., 2.95 x 10 <sup>-4</sup>)
+            </div>
+            <p> Rules Following are the rules for exponential form:- </p>
+            <ul class="point-wise">
+                <li>The mantissa part and the exponential part should be seperated by
+                    a letter 'e' or 'E'. </li>
+                <li> The mantissa part may have a positive or negative sign. </li>
+                <li>Default sign of mantissa part is positive.</li>
+                <li>The exponent must have at least one digit, which must be a positive
+                    or negative integer. Default sign is positive.
+                </li>
+                <li>Range of real constants expressed in exponential form is
+                    -3.4e38 to 3.4e38
+                </li>
+            </ul>
+            <div class="example">
+                Ex:-
+                <ul>
+                    <li>+1.2e-4</li>
+                    <li>3.2e8</li>
+                    <li>-0.5E + 4</li>
+                    <li>-2.3e - 5</li>
+                </ul>
+            </div>
+
+
+
+            <!-- Rules for Constructing Character Constants -->
+
+
+            <h3 class="innerheadings">Rules for Constructing Character Constants</h3>
+            <ul class="point-wise">
+                <li>A character constant is a single alphabet, a single digit or a single special symbol enclosed
+                    within single
+                    inverted commas.
+                </li>
+                <li>Both the inverted commas should point to the left.
+                    For Example:- 'A' is valid, whereas `a' is not.
+                </li>
+            </ul>
+            <div class="example">
+                Ex:-
+                <ul>
+                    <li>'A'</li>
+                    <li>'i'</li>
+                    <li>'5'</li>
+                    <li>'='</li>
+                </ul>
+            </div>
+
+            <!-- type of c variables -->
+
+            <h3 class="innerheadings">Types of C Variables</h3>
+            <p>
+                Variables are the container in which we store particular type of data whether it is an integer, real
+                or character .
+                A particular type of variable can hold only the same type of constant.
+                <br> For Example:-- an integer variable can hold only an integer constant
+                , a real variable can hold only a real constant and a character variable can hold only
+                a character constant.
+            </p>
+
+
+            <h3 class="innerheadings">Rules for Constructing Variable Names</h3>
+            <ul class="point-wise">
+                <li>A variable name is any combination of 1 to 31 alphabets, digits or underscores .
+
+                </li>
+                <li>Do not create unnecessarily long variable names. </li>
+                <li>The first character in the variable name must be an alphabet or underscore(_).
+
+                </li>
+                <li>No commas or blanks are allowed within a variable name. </li>
+                <li>No special symbol other than an underscore (as in Gross_sal) can be used in a variable name.
+                </li>
+            </ul>
+            <div class="example">
+                Ex:-
+                <ul>
+                    <li>si_int</li>
+                    <li>pop_e_89</li>
+                </ul>
+            </div>
+            <p>The variable type declaration is done at the beginning of the program as shown below
+
+            </p>
+            <div class="example">
+                ex:-
+                <ul>
+                    <li> int si, m_name;</li>
+                    <li>float num;</li>
+                    <li>char code;</li>
+                </ul>
+            </div>
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a href="c-programming.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="c keywords.html">&gt;&gt;</a></button>
+            </div>
+
+        </div>
+    </section>
+    <!-- <footer> </footer> -->
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+</body>
+
+</html>

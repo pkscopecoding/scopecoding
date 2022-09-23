@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+
+
+}
+
+
+body {
+    background-color: rgba(132, 0, 255, 0.7);
+
+}
+
+
+/* MEDIA QUERY FOR DROPDOWN MENU */
+a>.toggle-btn {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: sticky;
+    color: black;
+}
+
+.left_menubar {
+    display: inline-block;
+
+}
+
+
+.menubar_content {
+
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-400px);
+    transition: all 1s;
+    border-radius: 10px;
+    text-align: left;
+    height: 1100px;
+
+}
+
+.menubar_content ul li {
+    font-size: 30px;
+    height: 40px;
+    align-items: center;
+
+}
+
+.menubar_content ul {
+    font-size: 20px;
+    /* text-decoration: none; */
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    line-height: 50px;
+}
+
+.menubar_content ul a {
+
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+    padding-left: 30px;
+    /* padding: 10px 10px; */
+
+}
+
+.menubar_content a:hover {
+    background-color: red;
+
+
+}
+
+
+.left_menubar:hover>.menubar_content {
+    transform: translate(-5px);
+
+}
+
+.topics_intro {
+    display: flex;
+    background-color: blue;
+    padding: 0px 20px;
+    line-height: 20px;
+}
+
+/* .second_class ul li {} */
+
+/* .second_class ul li a:hover {
+    background-color: blue;
+    color: white;
+
+    
+} */
+
+/* .second_class ul li a {
+    margin-right: 0px;
+} */
+
+/* // */
+
+
+
+section {
+    justify-content: center;
+    box-shadow: 0px 15px 20px black;
+    background-color: white;
+    border-radius: 20px;
+    line-height: 40px;
+    margin: 4%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* TILL ABOVE */
+
+/* FIRST SECTION  */
+#firstsection {
+    display: flex;
+}
+
+#rightdiv {
+    width: 0%;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: none;
+
+}
+
+#rightdiv ul li a {
+    display: flex;
+    padding: 9px 50px;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    font-size: 1.2rem;
+    justify-content: center;
+    border-radius: 3px;
+
+
+}
+
+#rightdiv ul li a:hover {
+
+
+
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: rgb(0, 0, 0);
+}
+
+#rightdiv ul li {
+    margin-top: 5px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+#explained {
+    width: 60%;
+
+
+    padding: 20px;
+    align-items: center;
+
+}
+
+
+
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+
+
+
+
+#importanttips ol {
+    margin: 30px 30px;
+
+}
+
+
+
+#stepstolearn {
+    margin: 40px 2px;
+}
+
+
+
+#characterset {
+    margin-top: 40px;
+}
+
+
+
+.innerheadings {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 40px 2px;
+    color: rgb(174, 0, 255);
+    letter-spacing: .3px;
+}
+
+#rulesforconstant ul,
+.example ul,
+.realconstants ul,
+.characterconstant ul,
+.cvariables ul,
+#rulesforvarname ul {
+    margin-left: 10%;
+
+}
+
+.example {
+    border-left: 10px solid rgb(4, 208, 4);
+    background-color: rgb(254, 243, 113);
+    margin: 4px 10px;
+}
+
+.highlighted-lines {
+    background-color: rgba(247, 98, 235, 0.638);
+}
+
+
+
+/* keywords */
+
+
+#c_keyword {
+    display: flex;
+    background-color: rgb(24, 101, 24);
+    color: white;
+
+    margin: 30px 20px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: black 0px 10px 10px;
+
+}
+
+#c_keyword ul {
+    padding: 20px 20px;
+
+    justify-content: center;
+}
+
+#c_keyword ul li {
+
+    list-style: none;
+    font-size: 17px;
+}
+
+/*  */
+
+
+
+/* button */
+.next_btn {
+    margin-top: 60px;
+    padding: 18px;
+    border-radius: 1em;
+    margin-left: auto;
+    display: flex;
+    background-color: rgb(25, 134, 25);
+    color: white;
+    border: 0px;
+    box-shadow: black 0px 5px 5px;
+    margin-right: 5%;
+
+}
+
+.next_btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.next_btn:hover {
+    color: white;
+    background-color: blue;
+    box-shadow: 0px 10px 20px black;
+
+}
+
+@media (max-width: 750px) {
+
+    /* MEDIA QUERY FOR DROPDOWN MENU */
+
+
+    #rightdiv {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+
+
+    }
+
+    #explained {
+        width: 100%;
+
+    }
+}

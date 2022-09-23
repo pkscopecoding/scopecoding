@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer and float conversion in C </title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="">Scope</a>
+            <a id="coding" href="">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="www.scopecoding.com">Home</a></li>
+            <li><a href="https://www.scopecoding.com/#learn">Learn</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div " style="height: 100% ">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white; padding-left:20px;">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html">constants, Variables and Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="C Program in detail.html">Comment in C</a></li>
+                <li><a href="C Program in detail.html">Main() function in C</a></li>
+                <li><a href="C Program in detail.html"> Uses of Variables in C</a></li>
+                <li><a href="C Program in detail.html">Printf() in C</a></li>
+                <li><a href="C Program in detail.html">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html " class="active">Integer and Float Conversion</a>
+                </li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html">Increment and Decrement
+                        Operator in C</a></li>
+                <li><a href="relational operator in c.html">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li>
+            </ul>
+        </div>
+
+        <div class="content-main">
+
+            <h1 id="ar-h1" class="outerheading">Integer and Float Conversions</h1>
+            <div class="content-topic">
+                In order to effectively develop C programs, it will be necessary to understand the rules that are used
+                for the implicit conversion of floating point and integer value in c.
+            </div>
+            <ol>
+                <li>An arithmetic operation between an integer and integer always gives an integer result. </li>
+                <li>An operation between a real and real always gives a real result.</li>
+                <li>An operation between an integer and real always gives a real result. In this operation , the integer
+                    is
+                    first promoted to a real and then the operation is performed. Hence the result is real.</li>
+            </ol>
+            <i><b>here is some examples:</b></i>
+            <br>
+
+
+            <table class="tbl1">
+                <tr>
+                    <th>Operation</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>int/int</td>
+                    <td>int</td>
+                </tr>
+                <tr>
+                    <td>int / float</td>
+                    <td>float</td>
+                </tr>
+                <tr>
+                    <td>float / int</td>
+                    <td>float</td>
+                </tr>
+                <tr>
+                    <td>float/float</td>
+                    <td>float</td>
+                </tr>
+            </table>
+            <h2 class="innerheadings">
+                Type Conversion in Assignments
+            </h2>
+            <p>It may so happen that the type of the expression on right hand side and the type of the variable on the
+                left-hand side of an Assignment operator may not be same.</p>
+            <p>In such case, the value of the expression is promoted or demoted depending on the type of the variable on
+                left- hand side of =.</p>
+            <div class="example">
+                <ul>
+                    <li>
+                        <b>int i;</b>
+                    </li>
+                    <li><b>float b;</b></li>
+                    <li><b>i=3.5 ;</b></li>
+                    <li><b>b=30; </b></li>
+                </ul>
+            </div>
+            <p> Here, in the first assignment statement, <b> 3.5 </b> is a <b>float</b>
+                value, it cannot be stored in <b>i</b> since it is an <b> int. </b>
+                In such case, the <b> float </b> is demoted(converted) to an <b>int </b>
+                and then its value is stored. Hence, what gets stored in <b>i</b>
+                is <b>3.</b>
+
+            </p>
+            <p>Exactly opposite happens in the next statement. </p>
+            <p>Here, <b>30</b> is promoted to <b>30.0 </b> and then stored in <b>b,</b>
+                since <b>b</b> being a <b>float </b> variable cannot hold anything except a <b>float</b> value.
+                <b>NOTE: same rule apply for any complex expression.</b>
+            </p>
+            <p>
+                <b>Observe the results below. </b>
+            </p>
+            <div class="scroll-con">
+                <div class="divfirst">
+                    <b>OPERATION</b>
+                    <ul>
+                        <li><b>K = 2/9</b></li>
+                        <li><b>k = 2.0/ 9</b></li>
+                        <li><b>k = 2 / 9.0</b></li>
+                        <li><b>k = 2.0 / 9.0</b></li>
+                        <li><b>k = 9 / 2</b></li>
+                        <li><b>k = 9.0 / 2</b></li>
+                        <li><b>k = 9 / 2.0</b></li>
+                        <li><b>k = 9.0 / 2.0</b></li>
+                        <li><b></b></li>
+                    </ul>
+                </div>
+                <div>
+                    <b>
+                        RESULT
+                    </b>
+                    <ul>
+                        <li><b> 0 </b></li>
+                        <li><b> 0 </b></li>
+                        <li><b> 0 </b></li>
+                        <li><b> 0 </b></li>
+                        <li><b> 4 </b></li>
+                        <li><b> 4 </b></li>
+                        <li><b> 4 </b></li>
+                        <li><b> 4 </b></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <b>OPERATION</b>
+                    <UL>
+                        <li><b>a = 2 / 9</b></li>
+                        <li><b>a = 2.0 / 9</b></li>
+                        <li><b>a = 2 / 9.0</b></li>
+                        <li><b>a = 2.0 / 9.0</b></li>
+                        <li><b>a = 9 / 2</b></li>
+                        <li><b>a = 9.0 / 2</b></li>
+                        <li><b>a = 9 / 2.0</b></li>
+                        <li><b>a = 9.0 / 2.0</b></li>
+
+                    </UL>
+                </div>
+                <div>
+                    <b>RESULT</b>
+                    <ul>
+                        <li><b>0.0</b></li>
+                        <li><b>0.222222</b></li>
+                        <li><b>0.222222</b></li>
+                        <li><b>0.222222</b></li>
+                        <li><b>4.0</b></li>
+                        <li><b>4.5</b></li>
+                        <li><b>4.5</b></li>
+                        <li><b>4.5</b></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <p><b>It has been assumed that k is an integer variable and a is a real variable.</b>
+            </p>
+            <div class="example">
+                <ul>
+                    <li><b>k = 2/9;</b></li>
+                    <li><b>k = 2.0/9;</b></li>
+                </ul>
+            </div>
+            <br>
+            <p>In the first statement, since both 2 and 9 are integers, the result is an integer , i.3. 0. This 0 is
+                then
+                assigned to <b>k.</b>
+            </p>
+            <p>In the second statement 9 is promoted to 9.0 and then the division is performed. Division yields
+                0.222222.
+                However, this cannot be stored in <b>k, k </b> being an <b>int.</b> Hence it gets demoted(opposite of
+                promoted) to 0 and then stored in <b>k.</b>
+            </p>
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a href="C Program in detail.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="arithmetic operators in c.html">&gt;&gt;</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer> </footer> -->
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+</body>
+
+</html>

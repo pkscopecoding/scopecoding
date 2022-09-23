@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* section {
+    font-family: 'Roboto Mono', monospace;
+    /* margin-top: 200px; */
+/* box-sizing: border-box; */
+
+
+/* } */
+
+
+
+
+
+.button {
+    box-sizing: border-box;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+
+}
+
+.button>button {
+    padding: 10px 0px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+
+}
+
+
+
+/*  example part */
+
+.good-example {
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(210, 232, 251);
+    overflow-x: scroll;
+
+}
+
+.good-example ul li {
+
+    list-style: none;
+    padding-left: 10px;
+    width: 200px;
+
+}
+
+.snd ul li {
+
+    width: 500px;
+    color: rgb(6, 139, 6);
+}
+
+.good-example ul {
+    display: block;
+}

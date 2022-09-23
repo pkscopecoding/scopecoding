@@ -1,0 +1,196 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    background-color: #7cfdb6;
+    line-height: 30px;
+    width: 100%;
+}
+
+
+
+.innerheadings {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 40px 2px;
+    color: rgb(0, 0, 0);
+    letter-spacing: .3px;
+    font-weight: 900;
+    font: url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Mono&display=swap");
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+}
+
+
+
+
+section {
+    background-color: #7cfdb6;
+    display: flex;
+    display: block;
+
+    width: 100%;
+    /* overflow-x: hidden; */
+
+
+
+/* 
+footer {
+
+    margin-left: 400px;
+
+} */
+
+.content-main {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: 0px 20px 20px;
+    margin-left: 400px;
+}
+
+.image {
+    width: 50%;
+
+}
+
+.example ul li {
+    list-style: none;
+}
+
+.example {
+    background-color: yellow;
+    border-left: 10px solid green;
+}
+
+.leftsidebar {
+    overflow-y: scroll;
+    /* position: fixed; */
+    height: 100%;
+
+    display: block;
+    margin-top: 70px;
+
+
+}
+
+.content-main {
+
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    zoom: normal;
+
+}
+
+.content-main ul {
+    padding-left: 30px;
+
+}
+
+.leftsidebar {
+    background-color: rgba(0, 0, 0, 0.861);
+    padding-top: 30px;
+
+    font-family: 'Roboto Mono', monospace;
+    width: 400px;
+
+
+}
+
+.leftsidebar ul {
+    width: 400px;
+}
+
+.leftsidebar ul li {
+    padding-left: 10px;
+}
+
+
+
+
+.leftsidebar ul li a {
+
+    text-decoration: none;
+    line-height: 40px;
+    color: rgb(159, 159, 159);
+
+}
+
+.leftsidebar ul li a:hover {
+    color: white;
+    padding: 5px;
+}
+
+ol {
+    padding-left: 35px;
+}
+
+#c_keyword {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+#c_keyword li {
+    list-style: none;
+    width: 200px;
+}
+
+#c_keyword ul {
+    padding-left: 0;
+}
+
+@media (max-width:700px) {
+    .leftsidebar {
+        display: none;
+    }
+
+    .image {
+        width: 90%;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .content-main {
+        margin-left: 10px;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding-top: 100px;
+
+    }
+
+    #c_keyword {
+        flex-direction: column;
+
+    }
+
+    #c_keyword div ul li {
+        width: 300px;
+    }
+
+    footer {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+*/

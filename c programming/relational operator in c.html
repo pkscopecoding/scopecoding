@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational operators in C </title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="">Scope</a>
+            <a id="coding" href="">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="www.scopecoding.com">Home</a></li>
+            <li><a href="https://www.scopecoding.com/#learn">Learn</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div " style="height: 100% ">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white; padding-left:20px;">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html">constants, Variables and Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="C Program in detail.html">Comment in C</a></li>
+                <li><a href="C Program in detail.html">Main() function in C</a></li>
+                <li><a href="C Program in detail.html"> Uses of Variables in C</a></li>
+                <li><a href="C Program in detail.html">Printf() in C</a></li>
+                <li><a href="C Program in detail.html">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html ">Integer and Float Conversion</a>
+                </li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html">Increment and Decrement
+                        Operator in C</a></li>
+                <li><a href="relational operator in c.html" class="active">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li>
+            </ul>
+        </div>
+
+        <div class="content-main">
+
+            <h1 id="ar-h1" class="outerheading">Relational Operators in c</h1>
+            <p>Relational operators are used to compare values of two expressions. An expression that contains
+                relational
+                operators is called relational expression. If the relation is true then the value of relational
+                expression
+                is 1 and if the relation is false then the value of expression is 0. </p>
+            <br>
+            <p><i><b>the relational operators are :</b></i></p>
+            <br>
+
+            <table class="tbl1">
+                <tr>
+                    <th>operator</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>less than</td>
+                </tr>
+                <tr>
+                    <td>&lt;=</td>
+                    <td>lessthan or equal to </td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>equalto</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Not equal to</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>greater than</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>greater than or equal to</td>
+                </tr>
+            </table>
+            <br>
+            <br><br><br><br><br><br>
+
+            <p><b>Let us take an example: </b></p>
+
+
+            <!-- table      -->
+            <style>
+                table,
+                td,
+                th {
+                    border: 1px solid black;
+                    padding: 4px;
+                }
+
+                td {
+                    text-align: center;
+                }
+
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+            </style>
+
+            <table style="width: 100%">
+
+
+                <tr>
+                    <th>Expression </th>
+
+                    <th>Relation </th>
+                    <th>Value of Expression</th>
+                </tr>
+                <tr>
+                    <td>5 &lt; 2</td>
+                    <td>False</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5 &lt;= 2</td>
+                    <td>False</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5 == 2</td>
+                    <td>False</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5 != 2</td>
+                    <td>True</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5 > 2</td>
+                    <td>True</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5 >= 2</td>
+                    <td>True</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5 == 0</td>
+                    <td>False</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2 != 0</td>
+                    <td>True</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>9 > 4</td>
+                    <td>True</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+            <br>
+            <br><br><br><br><br>
+            <p>The relational operators are generally used in if...else and loop statements. Inside the if control
+                statement
+                evaluates an expression, and if this expression is <b>true(non zero) then the next statement is
+                    executed,
+                    otherwise the next statement is skipped. </b>The details of <i>if </i> statement are discussed in <a
+                    href="if-else statement in c.html">control statements.</a></p>
+
+            <p style="margin-bottom: 40px;">See the figure carefully: </p>
+            <div class="in-image">
+
+                <img class="image" src="/images/Screenshot 2022-09-16 004702.jpg" alt="image loading">
+            </div>
+            <p>Here, condition (5>8) is false therefore result will be 0 and the statement skipped. while condition
+                (5&lt;8 ) is true and reult will be 1, therefore statement2 will be proceeded.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a
+                        href="Increment and Decrement operators in c.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="logical operators in c.html">&gt;&gt;</a></button>
+            </div>
+    </section>
+
+
+
+
+    <!-- Footer part -->
+
+
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+</body>
+
+</html>
