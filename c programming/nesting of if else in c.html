@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditional operator in C </title>
+    <title>if-else nesting in C </title>
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="./css/python-style.css">
@@ -64,14 +64,14 @@
                 <li><a href="Increment and Decrement operators in c.html">Increment and Decrement Operator in C</a></li>
                 <li><a href="relational operator in c.html">Relational Operators in C</a></li>
                 <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
-                <li><a href="conditional operators in c.html" class="active">Conditional Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
                 <li><a href="sizeof.html">Sizeof Operator in C</a></li>
 
                 <!-- NO file from below please create it -->
 
                 <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
                 <li><a href="if-else statement in c.html">If-Else in C</a></li>
-                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <li><a href="nesting of if else in c.html" class="active">Nesting of if-else in C</a></li>
                 <!-- <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
                 <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
                 <li><a href="while loop in c.html">While Loop in C</a></li>
@@ -94,54 +94,69 @@
 
         <div class="content-main">
 
-            <h1>Conditional Operator</h1>
-            <p>Conditional operator is a ternary operator ( ? and : ) which requires three expressions as operands . It
-                is
-                written as- <br>
-                <b>TestExpression ? expression1 : expression2</b><br>
-                Firstly the TestExpression is evaluated.
-            <p><b><i>it will be more clear from the following image:</i></b></p>
-            <img class="image" src="/images/conditionaloperator.jpg" alt="">
-
-            <p>(i). If TestExpression(condition) is true (nonzero), then expression1 is
-                evaluated
+            <h1>Nesting of if-else</h1>
+            <p>We can have another <span class="pb">if...else</span> statement in the <span class="pb">if</span> part or
+                the <span class="pb">else</span> part. This is called nesting of <b>if....else</b> statements. Here is
+                an example of nesting where we have <span class="pb">if....else</span> inside both <b>if</b> and
+                <b>else</b> parts.
             </p>
-            <p>(ii). If TestExpression(condition) is false (zero), then expression2 is evaluated .</p>
+            <div class="example">
+                <b>if(expression) <br>
+                    { <br>
+                    &emsp; if (expression2) <br> &emsp; &emsp; statementA1 <br>&emsp; else <br> &emsp; &emsp;
+                    statementA2
+                    <br>
+                    }
+                    <br>
+                    else <br>
+                    {<br>
+                    &emsp; if(expression3) <br>
+                    &emsp; &emsp; statementB1 <br>
+                    &emsp; else <br>
+                    &emsp; &emsp; statementB2 <br>
+                    }
+                </b>
+            </div>
             <br>
-            <p>For example consider this conditional expression- </p>
-            <p><b>
-                    a>b?a:b
-                </b></p>
-            <p>Here first the expression <b>a > b </b>is evaluated, if the value is true then the value of variable
-                <b>a</b>
-                becomes the value of conditional expression otherwise the value of b becomes the value of conditional
-                expression.
+            <p>Q. <b>program to find biggest number from three given number </b></p>
+
+
+            <iframe src="https://www.jdoodle.com/iembed/v0/vW3?stdin=1&args=0&rw=1" height="800px" width="100%">
+            </iframe>
+            <p><b>note: here scanf isn't run properly in online compiler so the line printf is written as comment but
+                    without //
+                    or comment, write this code in your machine. </b></p>
+            <br><br>
+            <p>Explaination: here we have declared four variables <b>a , b, c,and big</b>
+                to store integer numbers, <i>printf</i> gives the message to enter the number, scanf() store the
+                input value , after that, <br>
+                <b>if(a>c) </b> is encountered,
+                if a is greater than c, the value of a will be stored in <b>big</b> if not , then value of c will be
+                stored
+                in big,
+                <br> in else part <br>
+                <b>if(b>c)</b> is true then <b>big</b> will have the value of b.
+                <br><b>if(b>c)</b> is false then, <b> in else </b> part big=c; <br>
+                printf() will print the bigger number stored in <b><i>big..</i></b>
             </p>
-            <br>
-            <p>Suppose <b>a= 5 and b = 8,</b> and we use the above conditional expression in a statement as -</p>
-            <p><b>max = a>b?a:b;</b></p>
-            <br>
-            <p>First the expression <b>a>b</b> is evaluated, it is false so the value of <b>b</b> becomes the value of
-                conditional expression and it is assigned to variable <b>max.</b></p>
-            <p> <b><i><b>a&lt;b ? printf(" a is smaller ") : printf( "b is smaller" );</b></i></b>
+            <br><br>
+            <p class="example"> <b>Que.</b>
+                </b> Write a program to find the bigger no. of two numbers. <br>
+                <b> Que.</b>
+                </b> Program to find whether a year is leap or not <br>
+                (Hint: leap year should not divide with 100 and if divides, then year should divide by 4 and if (year
+                %100 == 0 ) then year is leap )
             </p>
-
-
-
-
-
 
 
 
             <div class="button">
-                <button id="prev" class="bottom-btn"><a href="logical operators in c.html">&lt;&lt;</a></button>
+                <button id="prev" class="bottom-btn"><a href="if-else statement in c.html">&lt;&lt;</a></button>
                 <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
-                <button id="next" class="bottom-btn"><a href="sizeof.html">&gt;&gt;</a></button>
+                <button id="next" class="bottom-btn"><a href="">&gt;&gt;</a></button>
             </div>
         </div>
     </section>
-
-
     <!-- form -->
 
     <div class="formclass">
@@ -159,20 +174,17 @@
             <input type="text" name="name" placeholder="name" required>
 
             <input type="email" name="email" placeholder="your email address" required>
-            <!-- <input type="text" name="message" placeholder="drop a message, suggestions or complaint" class="msgbox" > -->
+
             <textarea name="message" id="msgbox" cols="1" rows="5" placeholder="message"></textarea>
 
 
-            <input type="hidden" name="_next" value="https://scopecoding/thanks.html">
+            <input type="hidden" name="_next" value="https://scopecoding.com/thanks.html">
             <br>
             <br>
             <button type="submit">Submit</button>
         </form>
     </div>
-
-    <!-- Footer part -->
-
-
+    <!-- <footer> </footer> -->
     <footer>
 
         <div id="qwerty" class="copyright-div">

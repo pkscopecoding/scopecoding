@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else statement in C </title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/python-style.css">
+    <link rel="stylesheet" href="navbar.css" class="">
+    <link rel="stylesheet" href="content.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a id="scope" href="https://scopecoding.com/">Scope</a>
+            <a id="coding" href="https://scopecoding.com/">Coding</a>
+        </div>
+        <a href="#" class="toggle-btn">
+            <ion-icon class="nav-icon" name="chevron-down-outline"></ion-icon>
+        </a>
+        <ul class="nav-links">
+            <li><a href="https://scopecoding.com/">Home</a></li>
+            <li><a href="Download vscode.html">&darr; Vs code</a></li>
+            <li><a href="https://www.scopecoding.com/#about-us">About Us</a></li>
+            <li><a href="https://www.scopecoding.com/#connect">Connect With Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <section class="python-section" id="python-section">
+        <a href="#" class="content-toggle">
+            <ion-icon class="content-icon" name="chevron-forward-outline"></ion-icon>
+        </a>
+        <div class="index-div ">
+            <h1>Contents</h1>
+            <ul class="content-links">
+                <li><a href="c-programming.html">Intro of C</a></li>
+                <li style="color:red ; background:white; padding-left:20px;">Input/Output and Elements of C</li>
+                <li><a href="constants, variables and keywords in c.html">constants, Variables and Keywords in C</a>
+                </li>
+                <li><a href="c keywords.html">C Keywords</a></li>
+
+
+                <!-- need to divide file -->
+                <li><a href="C Program in detail.html">First program in C</a></li>
+                <li><a href="C Program in detail.html">Comment in C</a></li>
+                <li><a href="C Program in detail.html">Main() function in C</a></li>
+                <li><a href="C Program in detail.html"> Uses of Variables in C</a></li>
+                <li><a href="C Program in detail.html">Printf() in C</a></li>
+                <li><a href="C Program in detail.html">Receiving Input in C</a></li>
+                <!--  -->
+                <li><a href="Integer and float Conversions in c.html">Integer and Float Conversion</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Operators and Expressions</li>
+                <li><a href="arithmetic operators in c.html">Arithmetic Operators in C</a></li>
+                <li><a href="hierarchy of operators in c.html">Hierarchy of Operations In C</a></li>
+                <li><a href="assignment operators in c.html">Assignment operator in C</a></li>
+                <li><a href="Increment and Decrement operators in c.html">Increment and Decrement Operator in C</a></li>
+                <li><a href="relational operator in c.html">Relational Operators in C</a></li>
+                <li><a href="logical operators in c.html">Logical or Boolean Operators in C</a></li>
+                <li><a href="conditional operators in c.html">Conditional Operators in C</a></li>
+                <li><a href="sizeof.html">Sizeof Operator in C</a></li>
+
+                <!-- NO file from below please create it -->
+
+                <li style="color:red ; background:white ; padding-left:20px;">Control Statements in C</li>
+                <li><a href="if-else statement in c.html" class="active">If-Else in C</a></li>
+                <li><a href="nesting of if else in c.html">Nesting of if-else in C</a></li>
+                <!-- <li><a href="else-if ladder in C.html">else - if ladder in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Loops in C</li>
+                <li><a href="while loop in c.html">While Loop in C</a></li>
+                <li><a href=" do-while loop in c.html">do-while Loop in C</a></li>
+                <li><a href="for loop in c.html">for Loop in C</a></li>
+                <li><a href="nesting of loops in c.html">Nesting of Loops in C</a></li>
+                <li> <a href="infinite loops in c.html">Infinite Loops in C</a></li>
+                <li> <a href="break statement in c.html">Break statement in C</a></li>
+                <li> <a href="continue statement in c.html">Continue statement in C</a></li>
+                <li> <a href="goto in c">goto in C </a></li>
+                <li> <a href=" switch statement in c.html">switch statement in C</a></li>
+                <li style="color:red ; background:white ; padding-left:20px;">Practice Problems</li>
+                <li> <a href="practice problems in c.html ">Problem. 1</a></li>
+                <li> <a href="practice problem2 in c.html">Problem. 2</a></li>
+                <li> <a href="practice problem3 in c.html">Problem. 3</a></li>
+                <li> <a href="practice problem4 in c.html"> Problem.4</a></li>
+                <li> <a href="practice problem5 in c.html">Problem. 5</a></li> -->
+            </ul>
+        </div>
+
+        <div class="content-main">
+
+            <h1>If- else statement</h1>
+            <p>This is a bi-directional selection control statement which is used to take one of the two possible
+                actions. The syntax of an <span class="pb">if-else</span> statement is: </p>
+            <div class="example">
+                <b>if ( expression )</b>
+                <br>
+                &emsp; statement1;
+                <br>
+                <b>else</b> <br>
+                &emsp; statement2;
+
+            </div>
+            <br>
+            <p>In other words we can say that :
+
+            </p>
+            <div class="example">
+                <b>if (expression) is true then, </b>
+                <br>
+                &emsp; statement1;
+                <br>
+                <b>if (expression) is false then,</b>
+                <br>
+                &emsp; statement2;
+            </div>
+            <br>
+            <p>The expression inside the parantheses is evaluated and if it is true (has a non-zero value), then
+                statement1 is executed and if the expression is false (zero) then statement2 is executed. This
+                expression is often called the <span class="pb"> if</span> condition. </p>
+            <br>
+            <div class="in-image">
+                <img class="image" src="/images/ifelse.jpg" alt="">
+            </div>
+            <br>
+            <p>The <span class="pb">else</span> part in the <span class="pb">if-else</span> statement is optional , it
+                means. an <span class="pb">if-else</span> statement can be written with or without the <span
+                    class="pb">else</span> clause. In case of missing <span class="pb">else</span> the syntax would be-
+            </p>
+            <div class="example">
+                <b>if (expression) </b>
+                <br>
+                &emsp; statement1;
+            </div>
+            <p><b>or</b></p>
+            <div class="example">
+                <b>if (expression)</b>
+                <br>
+                {<br>&emsp; statement; <br>&emsp;................................
+                <br>
+                }
+            </div>
+            <br>
+            <p>
+                there can be a single statement or a block of statements after the <b>if</b> part. If the expression is
+                true, then <i>statement1 </i>is executed and if it is false then the control transfers to the next
+                statement which is immediately after the <b>if</b> control statement.
+            </p>
+            <div class="in-image">
+                <img class="image" src="/images/withoutelse.jpg" alt="">
+            </div>
+            <br>
+            <p>We can use boolean operators for combining conditions. For example, suppose we want to take some action
+                if the value of variable is more than 10 and less than 25, then we can write an if statement as
+
+            </p>
+            <div class="example">
+                if (var > 10 && var &lt; 25) <br> &emsp; &emsp; statement1
+            </div>
+            <br>
+            <p>Now the <i>statement1 </i> will be executed only when both <b>var > 10 and var &lt; 25</b> are true.</p>
+            <p>Sometimes coding shortcuts are used while writing the conditions.</p>
+            <h3 class="innerheadings">
+                some shortcuts
+            </h3>
+            <p class="hlines"> 1. <span class="pb">if(exp!=0) </span> is often written as <span class="pb">if
+                    (exp)</span></p>
+            <p>The value of expression (exp!=0) will be true if <b>exp</b> is non-zero and false if exp is zero. The
+                value of epression <b>(exp) </b>will be true if <b>exp</b> is non-zero(as non-zero is true in C) and
+                false if exp is zero. </p>
+            <p>Hence, we can write <span class="pb">if(exp) </span> instead of <span class="pb">if(exp!=0).</span></p>
+            <p>So whenever you see code if this form- </p>
+            <div class="example">
+                <span class="pb">if(exp) <br>
+                    &emsp; statement1</span>
+                <p><b>read it as- if exp is non-zero execute statement1.</b></p>
+            </div>
+            <br>
+            <p class="hlines">2... <span class="pb">if(exp==0)</span> &emsp; is often written as &emsp; <span
+                    class="pb">if(!exp)</span></p>
+            <p>The value of expression (<b>exp==0)</b> will be true if <b>exp</b> is zero and false if <b>exp</b> is
+                non-zero. The expression <b>(!exp)</b> will be true if <b>exp</b> is zero and false if exp is non-zero.
+                Hence we can write <span class="pb">if(!exp)</span> instead of <span class="pb">if(exp==0)</span>.</p>
+            <p>So whenever you see code if this form- </p>
+            <div class="example">
+                <b>if(!exp) <br>
+                    &emsp; statement2 <br>
+                    read it as -- if exp is zero execute statement2.
+
+                </b>
+            </div>
+            <br>
+
+            <p><b>program:</b><i> program to print a message if negative number is entered. </i></p>
+            <br>
+            <iframe src="https://www.jdoodle.com/iembed/v0/vV6?stdin=1&args=0&rw=1" height="800px" width="100%">
+            </iframe>
+
+            <div class="button">
+                <button id="prev" class="bottom-btn"><a href="sizeof.html">&lt;&lt;</a></button>
+                <button id="exer" class="bottom-btn"><a href="exercise.html">exercise</a></button>
+                <button id="next" class="bottom-btn"><a href="nesting of if else in c.html">&gt;&gt;</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- form -->
+
+    <div class="formclass">
+        <br>
+        <div class="note">
+            <h3>NOte: this website is under design some button or links may not <br>
+                work properly. If you have any complaint or suggestions please drop a message below.</h3>
+        </div>
+        <br>
+        <h1>Any suggestions/messages</h1>
+
+        <br>
+        <form action="https://formsubmit.co/scopecodingofficial@gmail.com" method="POST">
+
+            <input type="text" name="name" placeholder="name" required>
+
+            <input type="email" name="email" placeholder="your email address" required>
+
+            <textarea name="message" id="msgbox" cols="1" rows="5" placeholder="message"></textarea>
+
+
+            <input type="hidden" name="_next" value="https://scopecoding.com/thanks.html">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- <footer> </footer> -->
+    <footer>
+
+        <div id="qwerty" class="copyright-div">
+            <p>Copyrights © <a href="#navigation">2022 Scope Coding.</a> All rights reserved.</p>
+            <br>
+            <a class="tos" href="">Terms of use</a>
+            <a class="" href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./js/python-app.js"></script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+</body>
+
+</html>

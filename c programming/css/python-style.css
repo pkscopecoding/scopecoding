@@ -304,6 +304,7 @@ footer {
     .python-section {
         padding-left: 25px;
         margin-top: 150px;
+
     }
 
     .content-img>img {
@@ -401,6 +402,11 @@ footer {
     .python-section {
         padding-left: 25px;
         margin-top: 50px;
+        padding: 16px;
+    }
+
+    .content-main {
+        padding: 20px;
     }
 }
 

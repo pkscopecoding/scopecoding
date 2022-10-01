@@ -136,3 +136,112 @@ b {
     font-weight: bold;
     font-size: 16px;
 }
+
+.formclass {
+    background-color: rgb(15, 145, 23);
+    color: white;
+    margin-left: 300px;
+
+}
+
+form>input {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 10px;
+
+}
+
+form>button {
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+
+form {
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.note {
+    font-weight: bold;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#msgbox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.division {
+    /* border: 1px solid red; */
+    margin: -25px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.division p {
+    margin: 20px 0px;
+}
+
+.part1 {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 20px;
+    width: 45%;
+    flex: 40%;
+    box-shadow: 0px 10px 15px grey;
+
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.st-image {
+    width: 100%;
+}
+
+
+
+@media (max-width:850px) {
+
+    .division {
+        display: block;
+        /* flex-wrap: wrap; */
+    }
+
+    .part1 {
+        margin: 50px 0;
+        width: 100%;
+    }
+
+    .formclass {
+
+        margin: 0;
+    }
+
+
+
+}
+
+@media (max-width:1100px) {
+    .part1 {
+        flex: 50%;
+    }
+}
